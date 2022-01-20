@@ -10,6 +10,8 @@
 nav{
     
     display: flex;
+    position: sticky;
+    top: 0;
     background-color: crimson;
     height: 50px;
     width: 100%;
@@ -25,16 +27,23 @@ nav .nav-text{
     margin-left: 20%;
 
 }
+
 nav .nav-text h2{
     margin-right: 30%;
+    transition: color 0.5s, text-shadow 0.5s, transform 0.5s ;
 }
 
 nav .nav-text a{
     color: white;
     margin-left: 2em;
+    transition: color 0.5s, text-shadow 0.5s , transform 0.5s;
+}
+
+nav .nav-text h2:hover, nav .nav-text a:hover{
+    color: black;
+    transform: scale(1.2);
 }
 .container{
     display: flex;
     flex-direction: column;
- 
 }
