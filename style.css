@@ -8,6 +8,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/*NAV SECTION*/
 nav{
     
     display: flex;
@@ -20,7 +21,7 @@ nav{
     z-index: 2;
 }
 
-nav .nav-text{
+nav .text{
     display: flex;
     flex-direction: row;
     align-items:center ;
@@ -29,27 +30,30 @@ nav .nav-text{
 
 }
 
-nav .nav-text h2{
+nav .text h2{
     margin-right: 30%;
     transition: color 0.5s, text-shadow 0.5s, transform 0.5s ;
 }
 
-nav .nav-text a{
+nav .text a{
     color: white;
     margin-left: 2em;
     transition: color 0.5s, text-shadow 0.5s , transform 0.5s;
 }
 
-nav .nav-text h2:hover, nav .nav-text a:hover{
+nav .text h2:hover, nav .text a:hover{
     color: black;
     transform: scale(1.2);
 }
+
+/*BODY SECTION*/
 .container{
     display: flex;
     flex-direction: column;
 }
 
-.container .container-home{
+/*HOME SECTION*/
+.container .home{
     height: 100vh;
     background-image: url(./images/home\ background\ image.jpg);
     background-size: cover;
@@ -59,8 +63,8 @@ nav .nav-text h2:hover, nav .nav-text a:hover{
     align-items: center;
 }
 
-.container .container-home .container-home-opacity{
-    background-color: rgba(0,0,0, 0.4);
+.container .home .opacity{
+    background-color: rgba(0,0,0, 0.7);
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,7 +72,7 @@ nav .nav-text h2:hover, nav .nav-text a:hover{
     align-items: center;
 }
 
-.container .container-home .container-home-opacity .container-home-opacity-text{
+.container .home .opacity .text{
     background-color: rgba(220,20,60,0.6);
     padding: 2%;
     font-size: 1.7em;
@@ -80,11 +84,11 @@ nav .nav-text h2:hover, nav .nav-text a:hover{
     z-index: 1;
 }
 
-.container .container-home .container-home-opacity .container-home-opacity-text span{
+.container .home .opacity .text span{
     color:black
 }
 
-.container .container-home .container-home-opacity .container-home-opacity-text a{
+.container .home .opacity .text a{
     background-color:white;
     color: black;
     padding: 3%;
@@ -94,3 +98,25 @@ nav .nav-text h2:hover, nav .nav-text a:hover{
     top: 0.5em;
     
 }    
+
+/*WHO I AM SECTION*/
+
+.who-I-am{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .who-I-am img{
+   align-self: flex-start;
+   display: inline;
+}
+
+.container .who-I-am .text{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
