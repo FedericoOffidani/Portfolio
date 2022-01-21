@@ -101,15 +101,42 @@ nav .text h2:hover, nav .text a:hover{
 
 /*WHO I AM SECTION*/
 
-.who-I-am{
+.container .who-I-am{
     height: 60vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.container .who-I-am img{
+.container .who-I-am h2{
+ position: relative;   
+ text-align-last: center;
+ margin-top: 3%;
+ font-size: 2.5em;
+}
+
+.container .who-I-am h3{
+    color: crimson;
+    margin-left: 50%;
+    margin-top: 0.4em;
+    text-align-last:center;
+    transform: translateX(-50%);
+    font-size: 1.3em;
+    background-color: white;
+    padding-inline: 0.3em;;
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.container .who-I-am .line{
+   width: 11.25em;
+   border-top: 0.25em solid black;
+   margin-left: 50%;
+   transform: translateX(-50%);
+   margin-top: -0.9em;
+   position: absolute;
+}
+
+.container .who-I-am .body img{
    align-self: flex-start;
    display: inline;
 }
