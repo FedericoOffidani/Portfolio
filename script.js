@@ -1,3 +1,14 @@
+document.addEventListener('scroll', scrolling);
+function scrolling(){
+    let navBarHeight=window.innerHeight;
+   if( document.documentElement.clientHeight>= navBarHeight){
+      
+       console.log(navBarHeight);
+       console.log(document.documentElement.clientHeight);
+       document.getElementById("nav").style.setProperty("background-color", "crimson");
+   }
+}
+
 
 var card1AddSrcTimeOut;
 var card1RemoveSrcTimeOut;

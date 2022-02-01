@@ -11,13 +11,11 @@
 /*NAV SECTION*/
 nav{  
     display: flex;
-    position: sticky;
-    top: 0;
-    background-color: crimson;
+    position: fixed;
     height: 5.5vh;
     width: 100%;
     font-size: 1.5em;
-    z-index: 2;
+    z-index: 10;
 }
 
 nav .text{
