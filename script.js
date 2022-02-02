@@ -1,15 +1,16 @@
-document.addEventListener('scroll', scrolling);
-function scrolling(){
-    let navBarHeight=window.innerHeight;
-   if( document.documentElement.clientHeight>= navBarHeight){
-      
-       console.log(navBarHeight);
-       console.log(document.documentElement.clientHeight);
-       document.getElementById("nav").style.setProperty("background-color", "crimson");
-   }
+//NAVBAR CHANGING COLOR ON SCROLL
+function scrolling() {
+    if (window.scrollY > 20) {
+
+        console.log(window.scrollY);
+        console.log(document.documentElement.clientHeight);
+        document.getElementById("nav").classList.add("nav-sticky")
+    } else {
+        document.getElementById("nav").classList.remove("nav-sticky")
+    }
 }
 
-
+//CARD CHANGING COLOR ON HOVER
 var card1AddSrcTimeOut;
 var card1RemoveSrcTimeOut;
 var card2AddSrcTimeOut;
