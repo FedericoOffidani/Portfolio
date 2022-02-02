@@ -63,3 +63,58 @@ function unhover(element) {
         card3RemoveSrcTimeOut = setTimeout(removesrc, 70);
     };
 }
+
+
+//WRITING "WEB DEVELOPER"
+
+function insert() {
+    var text = "Web developer";
+    var cos = ""
+    var cont = 0
+    var complete = false;
+    var switcH = false;
+
+    if (!complete) {
+        const addInter = setInterval(() => {
+            if (cont < text.length) {
+                cos += text[cont];
+                document.getElementById("span1").innerText = cos + "|";
+                cont++
+            }
+            else {
+                clearInterval(addInter);
+                const switchInt = setInterval(() => {
+                    if (!switcH) {
+                        document.getElementById("span1").innerText = cos;
+                        switcH = !switcH
+                    }
+                    else {
+                        document.getElementById("span1").innerText = cos + "|";
+                        switcH = !switcH
+                    }
+                }, 230)
+                setTimeout(() => {
+                    clearInterval(switchInt); complete = true; remove(text, cos, cont, complete)
+                }, 500)
+            };
+        }, 100);
+    }
+}
+insert()
+
+function remove(text, cos, cont, complete) {
+    if (complete) {
+        cos = "";
+        console.log(complete);
+        const RemInt = setInterval(() => {
+
+            cos = text.slice(0, cont);
+            document.getElementById("span1").innerText = cos + "|";
+            if (cont > 0) { cont-- }
+            else if (cont == 0) { complete = false; insert(), clearInterval(RemInt) }
+        }, 100);
+    }
+
+}
+
+
