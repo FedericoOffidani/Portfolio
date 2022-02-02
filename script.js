@@ -1,4 +1,5 @@
 //NAVBAR CHANGING COLOR ON SCROLL
+document.addEventListener('scroll', scrolling);
 function scrolling() {
     if (window.scrollY > 20) {
 
@@ -10,7 +11,7 @@ function scrolling() {
     }
 }
 
-//CARD CHANGING COLOR ON HOVER
+//CARDS CHANGING COLOR ON HOVER
 var card1AddSrcTimeOut;
 var card1RemoveSrcTimeOut;
 var card2AddSrcTimeOut;
