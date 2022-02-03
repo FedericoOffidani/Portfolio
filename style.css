@@ -168,7 +168,7 @@ nav .text h2:hover, nav .text a:hover{
 }
 
 /*SKILLS SECTIONS*/
-.container .skills{
+.container .soft-skills{
     height: 50vh;
     background-color: #111;
     color: white;
@@ -177,12 +177,12 @@ nav .text h2:hover, nav .text a:hover{
     align-items: center;
 }
 
-.container .skills h2{
+.container .soft-skills h2{
  margin-top: 2%;
  font-size: 2.5em;
 }
 
-.container .skills h3{
+.container .soft-skills h3{
     color: crimson;
     margin-top: 0.4em;
     font-size: 1.3em;
@@ -192,13 +192,13 @@ nav .text h2:hover, nav .text a:hover{
     z-index: 1;
 }
 
-.container .skills .line{
+.container .soft-skills .line{
    width: 11.25em;
    border-top: 0.25em solid white;
    margin-top: -0.80em;
 }
 
-.container .skills .cards{
+.container .soft-skills .cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +244,60 @@ nav .text h2:hover, nav .text a:hover{
     box-sizing: content-box;
 }
 
+.container .hard-skills{
+    height: 50vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:red 5px solid;
+  
+}
 
+.container .hard-skills h2{
+    margin-top: 2%;
+    font-size: 2.5em;
+    text-align: center;
+    width: fit-content;
+   }
+   
+   .container .hard-skills h3{
+       color: crimson;
+       margin-top: 0.4em;
+       font-size: 1.3em;
+       background-color: white;
+       padding-inline: 0.3em;
+       z-index: 1;
+       width: fit-content;
+       
+   }
+   
+   .container .hard-skills .line{
+    width: 11.25em;
+    margin-top: -0.80em;
+    border-top: 0.25em solid black;
+        
+   }
+
+   .container .hard-skills .description{
+       display: flex;
+       width: 60%;
+       border: 5px green solid;
+       height: 100%;
+   }
+
+   .container .hard-skills .description .description-box{
+    width: 50%;
+    border: tomato 4px solid;
+   }
+
+   .container .hard-skills .description .progress-box{
+       display:flex;
+       flex-direction: column;
+   
+   }
+  
 
 
 
