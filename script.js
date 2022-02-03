@@ -11,6 +11,55 @@ function scrolling() {
     }
 }
 
+
+//WRITING "WEB DEVELOPER"
+
+//entering the letters
+function insert() {
+    var text = "Web developer";
+    var letters = ""
+    var lettersIndex = 0
+    var switcH = false; //It check if the "|" is written
+
+        const addLettersInterv = setInterval(() => {
+            if (lettersIndex < text.length) {
+                letters += text[lettersIndex];
+                document.getElementById("span1").innerText = letters + "|";
+                lettersIndex++
+            }
+            else {
+                clearInterval(addLettersInterv);
+                const switchInt = setInterval(() => {
+                    if (!switcH) {
+                        document.getElementById("span1").innerText = letters;
+                        switcH = !switcH
+                    }
+                    else {
+                        document.getElementById("span1").innerText = letters + "|";
+                        switcH = !switcH
+                    }
+                }, 230)
+                setTimeout(() => {
+                    clearInterval(switchInt);  remove(text, letters, lettersIndex);return;
+                }, 500)
+            };
+        }, 100);
+    
+}
+insert()
+
+//removing the letters
+function remove(text, letters, lettersIndex) {
+        letters = "";
+        const RemLettersInterv = setInterval(() => {
+            letters = text.slice(0, lettersIndex);
+            document.getElementById("span1").innerText = letters + "|";
+            if (lettersIndex > 0) { lettersIndex-- }
+            else if (lettersIndex == 0) {  insert(); clearInterval(RemLettersInterv);return }
+        }, 100);
+
+}
+
 //CARDS CHANGING COLOR ON HOVER
 var card1AddSrcTimeOut;
 var card1RemoveSrcTimeOut;
@@ -63,58 +112,4 @@ function unhover(element) {
         card3RemoveSrcTimeOut = setTimeout(removesrc, 70);
     };
 }
-
-
-//WRITING "WEB DEVELOPER"
-
-function insert() {
-    var text = "Web developer";
-    var cos = ""
-    var cont = 0
-    var complete = false;
-    var switcH = false;
-
-    if (!complete) {
-        const addInter = setInterval(() => {
-            if (cont < text.length) {
-                cos += text[cont];
-                document.getElementById("span1").innerText = cos + "|";
-                cont++
-            }
-            else {
-                clearInterval(addInter);
-                const switchInt = setInterval(() => {
-                    if (!switcH) {
-                        document.getElementById("span1").innerText = cos;
-                        switcH = !switcH
-                    }
-                    else {
-                        document.getElementById("span1").innerText = cos + "|";
-                        switcH = !switcH
-                    }
-                }, 230)
-                setTimeout(() => {
-                    clearInterval(switchInt); complete = true; remove(text, cos, cont, complete)
-                }, 500)
-            };
-        }, 100);
-    }
-}
-insert()
-
-function remove(text, cos, cont, complete) {
-    if (complete) {
-        cos = "";
-        console.log(complete);
-        const RemInt = setInterval(() => {
-
-            cos = text.slice(0, cont);
-            document.getElementById("span1").innerText = cos + "|";
-            if (cont > 0) { cont-- }
-            else if (cont == 0) { complete = false; insert(), clearInterval(RemInt) }
-        }, 100);
-    }
-
-}
-
 
