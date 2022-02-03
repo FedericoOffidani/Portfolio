@@ -132,6 +132,7 @@ nav .text h2:hover, nav .text a:hover{
    margin-left: 50%;
    transform: translateX(-50%);
    margin-top: -0.80em;
+   border-top: 0.25em solid black;
 }
 
 .container .who-I-am .body{
