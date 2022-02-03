@@ -139,7 +139,7 @@ nav .text h2:hover, nav .text a:hover{
     display: flex;
     flex-direction: row;
     align-self: center;
-    width: 80%;
+    width: 90%;
     margin-top: 2%;
     justify-content: space-evenly;
 }
@@ -152,7 +152,7 @@ nav .text h2:hover, nav .text a:hover{
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 50%;
+   width: 60%;
    word-wrap: break-word;
    line-height: 1.4em;
 }
@@ -162,8 +162,9 @@ nav .text h2:hover, nav .text a:hover{
     font-size: 1.5em;
 }
 .container .who-I-am .body .text p{
-    margin-top: 5%;
-    font-size: 1.2em;
+    margin-top: 2%;
+    font-size: 1.4em;
+    line-height: 1.4em;
    
 }
 
@@ -244,6 +245,8 @@ nav .text h2:hover, nav .text a:hover{
     box-sizing: content-box;
 }
 
+/*HARD SKILLS SECTIONS */
+
 .container .hard-skills{
     height: 50vh;
     background-color: white;
@@ -251,7 +254,6 @@ nav .text h2:hover, nav .text a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:red 5px solid;
   
 }
 
@@ -260,18 +262,17 @@ nav .text h2:hover, nav .text a:hover{
     font-size: 2.5em;
     text-align: center;
     width: fit-content;
-   }
+}
    
-   .container .hard-skills h3{
-       color: crimson;
-       margin-top: 0.4em;
-       font-size: 1.3em;
-       background-color: white;
-       padding-inline: 0.3em;
-       z-index: 1;
-       width: fit-content;
-       
-   }
+.container .hard-skills h3{
+    color: crimson;
+    margin-top: 0.4em;
+    font-size: 1.3em;
+    background-color: white;
+    padding-inline: 0.3em;
+    z-index: 1;
+    width: fit-content;
+}
    
    .container .hard-skills .line{
     width: 11.25em;
@@ -283,22 +284,99 @@ nav .text h2:hover, nav .text a:hover{
    .container .hard-skills .description{
        display: flex;
        width: 60%;
-       border: 5px green solid;
        height: 100%;
+       
    }
 
    .container .hard-skills .description .description-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    border: tomato 4px solid;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-right: 1.5em;
+    margin-top: 2em;
+    /* border: tomato 4px solid; */
    }
-
-   .container .hard-skills .description .progress-box{
-       display:flex;
-       flex-direction: column;
    
-   }
-  
+   .container .hard-skills .description .description-box h4{
+    background-color:crimson;
+    padding: 3%;
+    height:45px;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    top: 0.5em;
+    height:45px;
+    margin-top: 2em ;
+} 
 
+.container .hard-skills .description .description-box a{
+    color: white;
+
+}
+
+.container .hard-skills .description .progress-box{
+    display:flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: center;
+    row-gap: 5%;
+    /* border: 5px green solid; */
+}
+
+.progress-box .progress-bar{
+    position: relative;
+}
+ 
+.progress-box .progress-bar .text-skills{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+
+   
+
+.progress-box .progress-bar .background{
+    width: 30vw;
+    border-top: 5px lightgrey  solid;
+    position: absolute;
+ 
+}
+
+
+.progress-box .progress-bar .foreground-html{
+    width: 27vw;
+    border-top: 5px crimson solid;
+    position: absolute;
+   
+}
+
+.progress-box .progress-bar .foreground-css3{
+    width: 24vw;
+    border-top: 5px crimson solid;
+    position: absolute;
+   
+}
+.progress-box .progress-bar .foreground-js{
+    width: 21vw;
+    border-top: 5px crimson solid;
+    position: absolute;
+  
+}
+.progress-box .progress-bar .foreground-react{
+    width: 18vw;
+    border-top: 5px crimson solid;
+    position: absolute;
+   
+}
 
 
 
