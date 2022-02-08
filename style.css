@@ -90,14 +90,13 @@ nav .text h2:hover, nav .text a:hover{
 .container .home .opacity .text a{
     background-color:white;
     color: black;
-    padding: 3%;
+    padding: 0.5em;
     height:45px;
     width: 42px;
     border-radius: 6px;
-    font-size: 0.9em;
     position: relative;
     left: 25%;
-    top: 0.5em;
+    top: 0.7em;
     
 }    
 
@@ -294,31 +293,28 @@ nav .text h2:hover, nav .text a:hover{
     align-items: center;
     justify-content: center;
     width: 50%;
-    font-size: 1.4em;
-    line-height: 1.4em;
+    
     margin-right: 1.5em;
     margin-top: 2em;
     /* border: tomato 4px solid; */
    }
-   
-   .container .hard-skills .description .description-box h4{
-    background-color:crimson;
-    padding: 3%;
-    height:45px;
-    width: fit-content;
-    border-radius: 6px;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 25%;
-    top: 0.5em;
-    height:45px;
-    margin-top: 2em ;
-} 
 
+   .container .hard-skills .description .description-box div{
+    font-size: 1.4em;
+    line-height: 1.4em;
+   }
+   
 .container .hard-skills .description .description-box a{
     color: white;
+    font-size: 1.7em;
+    background-color:crimson;
+    padding: 0.5em;
+    height:45px;
+    width: 42px;
+    border-radius: 6px;
+    position: relative;
+    left: 25%;
+    top: 1em;
 
 }
 
@@ -328,7 +324,6 @@ nav .text h2:hover, nav .text a:hover{
     width: 30vw;
     justify-content: center;
     row-gap: 5%;
-    /* border: 5px green solid; */
 }
 
 .progress-box .progress-bar{
