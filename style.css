@@ -437,3 +437,23 @@ nav .text h2:hover, nav .text a:hover{
  row-gap: 5%;
 }
 
+/* FOOTER SECTION */
+footer{
+    height: 5vh;
+    color: white;
+    background-color: #222;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+footer span{
+    color: crimson;
+}
+
+footer a{
+    color: white
+}
