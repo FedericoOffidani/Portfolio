@@ -293,10 +293,8 @@ nav .text h2:hover, nav .text a:hover{
     align-items: center;
     justify-content: center;
     width: 50%;
-    
     margin-right: 1.5em;
     margin-top: 2em;
-    /* border: tomato 4px solid; */
    }
 
    .container .hard-skills .description .description-box div{
@@ -373,5 +371,69 @@ nav .text h2:hover, nav .text a:hover{
    
 }
 
+/* C0NTACTS SECTION */
+.container .contacts{
+    height: 50vh;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
 
+.container .contacts h2{
+    margin-top: 2%;
+    font-size: 2.5em;
+    text-align: center;
+    width: fit-content;
+}
+   
+.container .contacts h3{
+    color: crimson;
+    margin-top: 0.4em;
+    font-size: 1.3em;
+    background-color: #111;
+    padding-inline: 0.3em;
+    z-index: 1;
+    width: fit-content;
+}
+   
+   .container .contacts .line{
+    width: 11.25em;
+    margin-top: -0.80em;
+    border-top: 0.25em solid white;
+        
+   }
+
+   .container .contacts .description{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.container .contacts .description .description-box{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 50%;
+ margin-right: 1.5em;
+ margin-top: 2em;
+}
+
+.container .contacts .description .description-box div{
+ font-size: 1.4em;
+ line-height: 1.4em;
+}
+
+
+.container .contacts .description .form-box{
+ display:flex;
+ flex-direction: column;
+ width: 30vw;
+ justify-content: center;
+ row-gap: 5%;
+}
 
