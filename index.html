@@ -189,18 +189,20 @@
                     </a>
 
                 </div>
-                <div class="form-box">
+                <form class="form-box" action="https://formspree.io/f/xpzbdqpr" method="POST">
                     <span class="span-font">Contattami</span>
                     <div class="name-surname-box">
-                        <input type="text" id="name" placeholder=" Nome e cognome">
-                        <input type="email" id="email" placeholder=" Email">
+                        <input type="text" id="name" name="nome" placeholder=" Nome e cognome" minlength="2"  required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
-                    <input type="text" id="oggetto" placeholder=" Oggetto della mail">
-                    <textarea name="" id="" cols="30" rows="5" placeholder=" Scrivi il tuo messaggio..."></textarea>
+                    <input type="text" id="oggetto" name="oggetto" placeholder=" Oggetto della mail" required>
+                    <textarea name="messaggio" id="" cols="30" rows="5" placeholder=" Scrivi il tuo messaggio..." required></textarea>
                     <button type="submit">Invia</button>
 
 
-                </div>
+                </form>
+
+
             </div>
         </div>
 

@@ -21,42 +21,42 @@ function insert() {
     var lettersIndex = 0
     var switcH = false; //It check if the "|" is written
 
-        const addLettersInterv = setInterval(() => {
-            if (lettersIndex < text.length) {
-                letters += text[lettersIndex];
-                document.getElementById("span1").innerText = letters + "|";
-                lettersIndex++
-            }
-            else {
-                clearInterval(addLettersInterv);
-                const switchInt = setInterval(() => {
-                    if (!switcH) {
-                        document.getElementById("span1").innerText = letters;
-                        switcH = !switcH
-                    }
-                    else {
-                        document.getElementById("span1").innerText = letters + "|";
-                        switcH = !switcH
-                    }
-                }, 230)
-                setTimeout(() => {
-                    clearInterval(switchInt);  remove(text, letters, lettersIndex);return;
-                }, 500)
-            };
-        }, 100);
-    
+    const addLettersInterv = setInterval(() => {
+        if (lettersIndex < text.length) {
+            letters += text[lettersIndex];
+            document.getElementById("span1").innerText = letters + "|";
+            lettersIndex++
+        }
+        else {
+            clearInterval(addLettersInterv);
+            const switchInt = setInterval(() => {
+                if (!switcH) {
+                    document.getElementById("span1").innerText = letters;
+                    switcH = !switcH
+                }
+                else {
+                    document.getElementById("span1").innerText = letters + "|";
+                    switcH = !switcH
+                }
+            }, 230)
+            setTimeout(() => {
+                clearInterval(switchInt); remove(text, letters, lettersIndex); return;
+            }, 500)
+        };
+    }, 100);
+
 }
 insert()
 
 //removing the letters
 function remove(text, letters, lettersIndex) {
-        letters = "";
-        const RemLettersInterv = setInterval(() => {
-            letters = text.slice(0, lettersIndex);
-            document.getElementById("span1").innerText = letters + "|";
-            if (lettersIndex > 0) { lettersIndex-- }
-            else if (lettersIndex == 0) {  insert(); clearInterval(RemLettersInterv);return }
-        }, 100);
+    letters = "";
+    const RemLettersInterv = setInterval(() => {
+        letters = text.slice(0, lettersIndex);
+        document.getElementById("span1").innerText = letters + "|";
+        if (lettersIndex > 0) { lettersIndex-- }
+        else if (lettersIndex == 0) { insert(); clearInterval(RemLettersInterv); return }
+    }, 100);
 
 }
 
@@ -113,3 +113,10 @@ function unhover(element) {
     };
 }
 
+//CLEARING THE FORM AFTER SUBMISSION
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
