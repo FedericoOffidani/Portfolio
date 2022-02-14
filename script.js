@@ -2,9 +2,6 @@
 document.addEventListener('scroll', scrolling);
 function scrolling() {
     if (window.scrollY > 20) {
-
-        console.log(window.scrollY);
-        console.log(document.documentElement.clientHeight);
         document.getElementById("nav").classList.add("nav-sticky")
     } else {
         document.getElementById("nav").classList.remove("nav-sticky")

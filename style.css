@@ -60,6 +60,9 @@ nav .text h2:hover, nav .text a:hover{
     height: 100vh;
     background-image: url(./images/home\ background\ image.jpg);
     background-size: cover;
+    
+    background-attachment: fixed;
+   
 }
 
 .container .home .opacity{
@@ -81,6 +84,7 @@ nav .text h2:hover, nav .text a:hover{
     margin-left: 30%;
     line-height: 1.5;
     z-index: 1;
+    
 }
 
 .container .home .opacity .text span{
