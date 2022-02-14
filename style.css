@@ -424,27 +424,45 @@ nav .text h2:hover, nav .text a:hover{
 }
 
 
+.description-box a{
+    width: fit-content;
+    height: 2em;
+    text-decoration: none;
+    color: white;
+    margin-top: 5%;
+}
+
 i{
-font-size: 2em;
-color: crimson;
-margin-top: 5%;
+
 width: fit-content;
 display: inline;
+color: crimson;
+}
+
+.fa-linkedin-in{
+    color: #0e76a8;
+    width: fit-content;
+}
+
+.fa-github{
+    color: white;
 }
 
 .fass-text{
     display: inline;
- 
+    position: relative;
+    bottom: 0.6em;   
 }
 
 .fass-text h4{
     display: inline;
     font-size: 0.5em;
+    margin-left: 0.8em    
 }
 
 .fass-text span{
     display: block;
-    margin-left: 2em;
+    margin-left:4.6em;
     font-size: 0.5em;
     margin-top: -1.5em;
 }
@@ -454,7 +472,6 @@ display: inline;
  font-size: 1.4em;
  line-height: 1.4em;
  margin-top: 5%;
-
 }
 
 .container .contacts .description .form-box{
@@ -493,9 +510,15 @@ background-color: #222;
 color:white; 
 border-radius: 6px;
 font-size: 1.4em;
-border-color: #111;
+border-color: #222;
 
-} 
+}
+
+input:focus,textarea:focus{
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color:crimson;
+}
 
 
 input::placeholder,textarea::placeholder{
@@ -507,6 +530,7 @@ color:white;
     color: white;
     font-size: 1.7em;
     background-color:crimson;
+    border-color: crimson;
     padding: 0.5em;
     border-radius: 6px;
 }
