@@ -313,6 +313,41 @@ margin-left: 65%;
 	display: block;
 }
 
+/*DOWNLOAD CV BUTTON*/
+#Cv {
+	position: fixed;
+    font-size: 1.7em;
+    padding: 0.6em;
+    left: 5vw;
+    top: 93vh;
+    z-index: 5;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+	background-color: rgba(220,20,60,0.9);
+	box-shadow: 0 0.6em 1em 0.2em hsla(210, 100%, 39%, 0.4);
+	transform: translateY(0%);
+	transition: ease-out 200ms;
+	transition-property: transform, background-color;
+}
+
+#Cv:hover {
+	transform: translateY(-22%);
+	background-color: crimson
+}
+
+#Cv::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 10%;
+	height: 20%;
+	transform: translateY(-30%);
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+}
+
 /*HARD SKILLS SECTIONS */
 
 .container .hard-skills{
