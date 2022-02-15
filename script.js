@@ -2,9 +2,13 @@
 document.addEventListener('scroll', scrolling);
 function scrolling() {
     if (window.scrollY > 20) {
-        document.getElementById("nav").classList.add("nav-sticky")
+        document.getElementById("nav").classList.add("nav-sticky");
+        document.getElementById("lio").classList.add("sticky");
+        
+       
     } else {
         document.getElementById("nav").classList.remove("nav-sticky")
+        document.getElementById("lio").classList.remove("sticky");
     }
 }
 
