@@ -8,6 +8,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /*NAV SECTION*/
 nav{  
     display: flex;
@@ -122,8 +125,15 @@ margin-left: 65%;
     position: relative;
     left: 25%;
     top: 0.7em;
+    transition: all 0.2s ;
     
 }    
+
+.container .home .opacity .text a:hover{
+    background-color: #222;
+    color: crimson;
+    
+}
 
 /*WHO I AM SECTION*/
 .container .who-I-am{
@@ -269,6 +279,40 @@ margin-left: 65%;
     box-sizing: content-box;
 }
 
+/*BACK TO TOP BUTTON*/
+#back-to-top {
+	position: fixed;
+    font-size: 1.7em;
+    padding: 0.6em;
+    left: 95vw;
+    top: 93vh;
+    z-index: 5;
+    border-radius: 50%;
+    text-decoration: none;
+	background-color: rgba(220,20,60,0.9);
+	box-shadow: 0 0.6em 1em 0.2em hsla(210, 100%, 39%, 0.4);
+	transform: translateY(0%);
+	transition: ease-out 200ms;
+	transition-property: transform, background-color;
+}
+
+#back-to-top:hover {
+	transform: translateY(-22%);
+	background-color: crimson
+}
+
+#back-to-top::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 10%;
+	height: 20%;
+	transform: translateY(-30%);
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+}
+
 /*HARD SKILLS SECTIONS */
 
 .container .hard-skills{
@@ -297,8 +341,8 @@ margin-left: 65%;
     z-index: 1;
     width: fit-content;
 }
-   
-   .container .hard-skills .line{
+
+.container .hard-skills .line{
     width: 11.25em;
     margin-top: -0.80em;
     border-top: 0.25em solid black;
@@ -338,7 +382,13 @@ margin-left: 65%;
     position: relative;
     left: 25%;
     top: 1em;
+    transition: all 0.2s;
+}
 
+.container .hard-skills .description .description-box a:hover{
+background-color: white;
+color: crimson;
+border: solid 2px crimson;
 }
 
 .container .hard-skills .description .progress-box{
@@ -442,7 +492,6 @@ margin-left: 65%;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
- /* justify-content: center; */
  width: 50%;
  margin-right: 1.5em;
  margin-top: 5%;
@@ -557,6 +606,13 @@ color:white;
     border-color: crimson;
     padding: 0.5em;
     border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.form-box button:hover{
+    background-color: white;
+    color: crimson;
+    border: 2px solid crimson;
 }
 
 

@@ -4,8 +4,8 @@ function scrolling() {
     if (window.scrollY > 20) {
         document.getElementById("nav").classList.add("nav-sticky");
         document.getElementById("lio").classList.add("sticky");
-        
-       
+
+
     } else {
         document.getElementById("nav").classList.remove("nav-sticky")
         document.getElementById("lio").classList.remove("sticky");
@@ -117,7 +117,20 @@ function unhover(element) {
 //CLEARING THE FORM AFTER SUBMISSION
 
 window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      form.reset();
+    for (const form of document.getElementsByTagName('form')) {
+        form.reset();
     }
-  }
+}
+
+
+//HIDE SCROLL TO THE TOP BUTTON
+document.addEventListener('scroll', hideButton);
+function hideButton() {
+    if (window.scrollY > 870) {
+        document.getElementById("back-to-top").setAttribute('style', 'display:visible');
+    }
+
+    else { document.getElementById("back-to-top").setAttribute('style', 'display:none') }
+}
+
+hideButton()
