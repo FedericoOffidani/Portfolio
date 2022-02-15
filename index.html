@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
         integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Federico Offidani-Portfolio</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/fontawesome.min.js" integrity="sha512-PoFg70xtc+rAkD9xsjaZwIMkhkgbl1TkoaRrgucfsct7SVy9KvTj5LtECit+ZjQ3ts+7xWzgfHOGzdolfWEgrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/brands.min.js" integrity="sha512-oPuIMrT4JN6Cw359VQkuI0OPn1reFOKJm1YUOjXxgIzMmNMY7g4jenNcJdYcF3dt90WyNajzivr3vZFSzgqLow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Federico Offidani-Portfolio</title>
 </head>
 
 <body>
     <nav id="nav">
         <div class="text">
-            <h2><a href="#">Portfolio.</a></h2>
+            <h2><a href="#">Portfo<span id="lio">lio.</span></a></h2>
             <a href="#home">Home</a>
             <a href="#chisono">Chi sono</a>
             <a href="#skill">Skills</a>
@@ -35,8 +37,19 @@
                     <h3>E sono un <span id="span1"></span></h3>
                     <h4><a href="#contact">Contattami</a></h4>
                 </div>
+                <div class="home-icon">
+                    <a href="https://www.linkedin.com/in/federicooffidani/" target="_blank">
+                        <i class=" fa-brands fa-linkedin-in fa-2x fa-bounce"></i>
+                    </a>
+                    <a href="https://github.com/FedericoOffidani" target="_blank">
+                        <i class="fa solid fa-brands fa-github fa-2x  fa-bounce" ></i>
+                    </a>
+                </div>
             </div>
         </div>
+
+                
+
         <div class="who-I-am" id="chisono">
             <h2>Su di me</h2>
             <h3>Chi sono</h3>
@@ -156,7 +169,7 @@
 
 
                         <a href="tel:00393319196398">
-                            <i class="fas fa-solid fa-phone fa-2x"></i>
+                            <i class="fas fa-solid fa-phone fa-2x "></i>
                             <div class="fass-text">
                                 <h4>Cellulare</h4>
                                 <span>+39 3319196398</span>
@@ -167,11 +180,11 @@
                             <i class="fas fa-envelope fa-2x"></i>
                             <div class="fass-text">
                                 <h4>Email</h4>
-                                <span>federicooffidani@gmail</span>
+                                <span>federicooffidani@gmail.com</span>
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/federicooffidani/" target="blank">
+                        <a href="https://www.linkedin.com/in/federicooffidani/" target="_blank">
                             <i class="fa-brands fa-linkedin-in fa-2x"></i>
                             <div class="fass-text">
                                 <h4>Linkedin</h4>
@@ -179,7 +192,7 @@
                             </div>
                         </a>
 
-                        <a href="https://github.com/FedericoOffidani" target="blank">
+                        <a href="https://github.com/FedericoOffidani" target="_blank">
                             <i class="fa-brands fa-github fa-2x"></i>
                             <div class="fass-text">
                                 <h4>GitHub</h4>
@@ -192,11 +205,12 @@
                 <form class="form-box" action="https://formspree.io/f/xpzbdqpr" method="POST">
                     <span class="span-font">Contattami</span>
                     <div class="name-surname-box">
-                        <input type="text" id="name" name="nome" placeholder=" Nome e cognome" minlength="2"  required>
+                        <input type="text" id="name" name="nome" placeholder=" Nome e cognome" minlength="2" required>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <input type="text" id="oggetto" name="oggetto" placeholder=" Oggetto della mail" required>
-                    <textarea name="messaggio" id="" cols="30" rows="5" placeholder=" Scrivi il tuo messaggio..." required></textarea>
+                    <textarea name="messaggio" id="" cols="30" rows="5" placeholder=" Scrivi il tuo messaggio..."
+                        required></textarea>
                     <button type="submit">Invia</button>
 
 

@@ -44,6 +44,14 @@ nav .text a{
     transition: color 0.5s, text-shadow 0.5s , transform 0.5s;
 }
 
+#lio{
+    color: crimson;
+}
+
+.sticky{
+    color: white !important;
+}
+
 nav .text h2:hover, nav .text a:hover{
     color: black;
     transform: scale(1.2);
@@ -85,6 +93,19 @@ nav .text h2:hover, nav .text a:hover{
     line-height: 1.5;
     z-index: 1;
     
+}
+
+.opacity .home-icon{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 10%;
+    position: relative;
+    right: 3%;
+}
+
+.opacity .home-icon a{
+font-size: 3em;
+margin-left: 65%;
 }
 
 .container .home .opacity .text span{
