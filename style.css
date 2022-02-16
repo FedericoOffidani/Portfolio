@@ -7,7 +7,6 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -21,51 +20,41 @@ nav{
     z-index: 10;
     padding: 50px 0px;
     transition: all 0.3s ease;
-    
 }
-
 .nav-sticky{
     background-color: crimson;
     padding: 25px 0px;
 }
-
 nav .text{
     display: flex;
     align-items:center ;
     width: 100%;
     margin-left: 20%;
 }
-
 nav .text h2{
     margin-right: 30%;
     transition: color 0.5s, text-shadow 0.5s, transform 0.5s ;
 }
-
 nav .text a{
     color: white;
     margin-left: 2em;
     transition: color 0.5s, text-shadow 0.5s , transform 0.5s;
 }
-
 #lio{
     color: crimson;
 }
-
 .sticky{
     color: white !important;
 }
-
 nav .text h2:hover, nav .text a:hover{
     color: black;
     transform: scale(1.2);
 }
-
 /*BODY SECTION*/
 .container{
     display: flex;
     flex-direction: column;
 }
-
 /*HOME SECTION*/
 .container .home{
     height: 100vh;
@@ -73,7 +62,6 @@ nav .text h2:hover, nav .text a:hover{
     background-size: cover;
     background-attachment: fixed;
 }
-
 .container .home .opacity{
     background-color: rgba(0,0,0, 0.7);
     width: 100%;
@@ -82,7 +70,6 @@ nav .text h2:hover, nav .text a:hover{
     flex-direction: column;
     align-items: center;
 }
-
 .container .home .opacity .text{
     background-color: rgba(220,20,60,0.6);
     padding: 2%;
@@ -93,9 +80,7 @@ nav .text h2:hover, nav .text a:hover{
     margin-left: 30%;
     line-height: 1.5;
     z-index: 1;
-    
 }
-
 .opacity .home-icon{
     display: flex;
     margin-left: 20%;
@@ -103,16 +88,13 @@ nav .text h2:hover, nav .text a:hover{
     position: relative;
     right: 3%;
 }
-
 .opacity .home-icon a{
 font-size: 3em;
 margin-left: 65%;
 }
-
 .container .home .opacity .text span{
     color:black
 }
-
 .container .home .opacity .text a{
     background-color:white;
     color: black;
@@ -124,15 +106,11 @@ margin-left: 65%;
     left: 25%;
     top: 0.7em;
     transition: all 0.2s ;
-    
 }    
-
 .container .home .opacity .text a:hover{
     background-color: #222;
     color: crimson;
-    
 }
-
 /*WHO I AM SECTION*/
 .container .who-I-am{
     height: 60vh;
@@ -140,13 +118,11 @@ margin-left: 65%;
     flex-direction: column;
     background-color: white;
 }
-
 .container .who-I-am h2{
  text-align: center;
  margin-top: 2%;
  font-size: 2.5em;
 }
-
 .container .who-I-am h3{
     color: crimson;
     margin-left: 50%;
@@ -158,7 +134,6 @@ margin-left: 65%;
     width: fit-content;
     z-index: 1;
 }
-
 .container .who-I-am .line{
    width: 11.25em;
    margin-left: 50%;
@@ -166,7 +141,6 @@ margin-left: 65%;
    margin-top: -0.80em;
    border-top: 0.25em solid black;
 }
-
 .container .who-I-am .body{
     display: flex;
     flex-direction: row;
@@ -175,14 +149,12 @@ margin-left: 65%;
     margin-top: 2%;
     justify-content: space-evenly;
 }
-
 .container .who-I-am .body img{
   border-radius: 100%;
   margin-top: 1%;
   width: fit-content;
   height: fit-content;
 }
-
 .container .who-I-am .body .text{
    display: flex;
    flex-direction: column;
@@ -191,7 +163,6 @@ margin-left: 65%;
    word-wrap: break-word;
    line-height: 1.4em;
 }
-
 .container .who-I-am .body .text h4{
     margin-top: 1%;
     font-size: 1.5em;
@@ -200,9 +171,7 @@ margin-left: 65%;
     margin-top: 3%;
     font-size: 1.45em;
     line-height: 1.4em;
-   
 }
-
 /*SKILLS SECTIONS*/
 .container .soft-skills{
     height: 50vh;
@@ -212,12 +181,10 @@ margin-left: 65%;
     flex-direction: column;
     align-items: center;
 }
-
 .container .soft-skills h2{
  margin-top: 2%;
  font-size: 2.5em;
 }
-
 .container .soft-skills h3{
     color: crimson;
     margin-top: 0.4em;
@@ -227,13 +194,11 @@ margin-left: 65%;
     width: fit-content;
     z-index: 1;
 }
-
 .container .soft-skills .line{
    width: 11.25em;
    border-top: 0.25em solid white;
    margin-top: -0.80em;
 }
-
 .container .soft-skills .cards{
     display: flex;
     align-items: center;
@@ -243,7 +208,6 @@ margin-left: 65%;
     text-align: center;
     padding: 50px 25px;
 }
-
 .card-box{
     height:85%;
     width: 25%;
@@ -252,11 +216,9 @@ margin-left: 65%;
     border-radius: 6px;
     transition: all 0.3s ease
 }
-
 .card-box:hover{
     background-color: crimson;
 }
-
 .card1, .card2, .card3{
     height:100%;
     width: 100%;
@@ -267,11 +229,9 @@ margin-left: 65%;
     cursor: pointer;
     transition: all 0.3s ease
 }
-
 .card1:hover,.card2:hover, .card3:hover{
     transform: scale(1.05);
 }
-
 .card-box img{ 
     width: 33%;
     height: auto;
@@ -279,7 +239,6 @@ margin-left: 65%;
     padding: 20px;
     box-sizing: content-box;
 }
-
 /*BACK TO TOP BUTTON*/
 #back-to-top {
 	position: fixed;
@@ -296,12 +255,10 @@ margin-left: 65%;
 	transition: ease-out 200ms;
 	transition-property: transform, background-color;
 }
-
 #back-to-top:hover {
 	transform: translateY(-22%);
 	background-color: crimson
 }
-
 #back-to-top::after {
 	content: "";
 	position: absolute;
@@ -313,7 +270,6 @@ margin-left: 65%;
 	background-color: rgba(0, 0, 0, 0);
 	display: block;
 }
-
 /*DOWNLOAD CV BUTTON*/
 #Cv {
 	position: fixed;
@@ -331,12 +287,10 @@ margin-left: 65%;
 	transition: ease-out 200ms;
 	transition-property: transform, background-color;
 }
-
 #Cv:hover {
 	transform: translateY(-22%);
 	background-color: crimson
 }
-
 #Cv::after {
 	content: "";
 	position: absolute;
@@ -348,9 +302,7 @@ margin-left: 65%;
 	background-color: rgba(0, 0, 0, 0);
 	display: block;
 }
-
 /*HARD SKILLS SECTIONS */
-
 .container .hard-skills{
     height: 50vh;
     background-color: white;
@@ -360,14 +312,12 @@ margin-left: 65%;
     align-items: center;
     position: relative;
 }
-
 .container .hard-skills h2{
     margin-top: 2%;
     font-size: 2.5em;
     text-align: center;
     width: fit-content;
 }
-   
 .container .hard-skills h3{
     color: crimson;
     margin-top: 0.4em;
@@ -377,23 +327,17 @@ margin-left: 65%;
     z-index: 1;
     width: fit-content;
 }
-
 .container .hard-skills .line{
     width: 11.25em;
     margin-top: -0.80em;
     border-top: 0.25em solid black;
-        
    }
-
    .container .hard-skills .description{
        display: flex;
        width: 60%;
        height: 100%;
-      
-       
-   }
-
-   .container .hard-skills .description .description-box{
+}
+.container .hard-skills .description .description-box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,18 +345,16 @@ margin-left: 65%;
     width: 50%;
     margin-right: 1.5em;
     margin-top: 2em;
-   }
-
-   .container .hard-skills .description .description-box p{
+}
+.container .hard-skills .description .description-box p{
     font-size: 1.45em;
     line-height: 1.4em;
     text-align: start;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10%;
-   }
-
-   /*CONTACT ME BUTTON */
+}
+/*CONTACT ME BUTTON */
 .container .hard-skills h4{
     height: fit-content;
     width: fit-content;
@@ -421,7 +363,6 @@ margin-left: 65%;
     left: 50%;
     top:88%;
     transform: translateX(-50%);
-    
 }     
 .container .hard-skills a{
     color: white;
@@ -433,15 +374,12 @@ margin-left: 65%;
     border-radius: 6px;
     transition: all 0.2s;
     text-align: center;
-    
 }
-
 .container .hard-skills  a:hover{
 background-color: white;
 color: crimson;
 border: solid 2px crimson;
 }
-
 .container .hard-skills .description .progress-box{
     display:flex;
     flex-direction: column;
@@ -450,54 +388,40 @@ border: solid 2px crimson;
     margin-top: 6em;
     row-gap: 5%;
 }
-
 .progress-box .progress-bar{
     position: relative;
 }
- 
 .progress-box .progress-bar .text-skills{
     display: flex;
     width: 100%;
     justify-content: space-between;
     font-size: 1.45em;
 }
-
-   
-
 .progress-box .progress-bar .background{
     width: 30vw;
     border-top: 5px lightgrey  solid;
     position: absolute;
- 
 }
-
-
 .progress-box .progress-bar .foreground-html{
     width: 27vw;
     border-top: 5px crimson solid;
     position: absolute;
-   
 }
-
 .progress-box .progress-bar .foreground-css3{
     width: 24vw;
     border-top: 5px crimson solid;
     position: absolute;
-   
 }
 .progress-box .progress-bar .foreground-js{
     width: 21vw;
     border-top: 5px crimson solid;
     position: absolute;
-  
 }
 .progress-box .progress-bar .foreground-react{
     width: 18vw;
     border-top: 5px crimson solid;
     position: absolute;
-   
 }
-
 /*FREE TIME SECTION*/
 .container .free-time{
     height: 50vh;
@@ -507,12 +431,10 @@ border: solid 2px crimson;
     flex-direction: column;
     align-items: center;
 }
-
 .container .free-time h2{
  margin-top: 2%;
  font-size: 2.5em;
 }
-
 .container .free-time h3{
     color: crimson;
     margin-top: 0.4em;
@@ -522,13 +444,11 @@ border: solid 2px crimson;
     width: fit-content;
     z-index: 1;
 }
-
 .container .free-time .line{
    width: 11.25em;
    border-top: 0.25em solid white;
    margin-top: -0.80em;
 }
-
 .container .free-time .cards{
     display: flex;
     align-items: center;
@@ -538,7 +458,6 @@ border: solid 2px crimson;
     text-align: center;
     padding: 50px 25px;
 }
-
 .container .free-time .cards .card-box{
     height:85%;
     width: 25%;
@@ -547,11 +466,9 @@ border: solid 2px crimson;
     border-radius: 6px;
     transition: all 0.3s ease
 }
-
 .container .free-time .cards .card-box:hover{
     background-color: crimson;
 }
-
 .container .free-time .cards .card-box .card1, .card2, .card3{
     height:100%;
     width: 100%;
@@ -562,7 +479,6 @@ border: solid 2px crimson;
     cursor: pointer;
     transition: all 0.3s ease
 }
-
 .container .free-time .cards .card-box .card1{
     background-image: url("/images/home\ background\ image.jpg");
     background-size: cover;
@@ -570,9 +486,7 @@ border: solid 2px crimson;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-   
 }
-
 .container .free-time .cards .card-box .card2{
     background-image: url("/images/mountain/mountain-river.jpeg");
     background-size: cover;
@@ -580,10 +494,7 @@ border: solid 2px crimson;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    
-   
 }
-
 .container .free-time .cards .card-box .card3{
     background-image: url("/images/trips/firenze.jpeg");
     background-size: cover;
@@ -591,10 +502,7 @@ border: solid 2px crimson;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    
-    
 }
-
 .text-passion{
     background-color: crimson;
     color: white;
@@ -602,13 +510,9 @@ border: solid 2px crimson;
     /* border-radius:0px 0px 10px 10px; */
     opacity: 0.7;
 }
-
-
-
 .container .free-time .cards .card-box .card1:hover,.card2:hover, .card3:hover{
     transform: scale(1.05);
 }
-
 /* C0NTACTS SECTION */
 .container .contacts{
     height: 70vh;
@@ -617,16 +521,13 @@ border: solid 2px crimson;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
-
 .container .contacts h2{
     margin-top: 2%;
     font-size: 2.5em;
     text-align: center;
     width: fit-content;
 }
-   
 .container .contacts h3{
     color: crimson;
     margin-top: 0.4em;
@@ -636,21 +537,16 @@ border: solid 2px crimson;
     z-index: 1;
     width: fit-content;
 }
-   
-   .container .contacts .line{
+.container .contacts .line{
     width: 11.25em;
     margin-top: -0.80em;
     border-top: 0.25em solid white;
-        
-   }
-
-   .container .contacts .description{
+}
+.container .contacts .description{
     display: flex;
     width: 60%;
     height: 100%;
-    
 }
-
 .container .contacts .description .description-box{
  display: flex;
  flex-direction: column;
@@ -659,8 +555,6 @@ border: solid 2px crimson;
  margin-right: 1.5em;
  margin-top: 5%;
 }
-
-
 .description-box a{
     width: fit-content;
     height: 2em;
@@ -668,49 +562,40 @@ border: solid 2px crimson;
     color: white;
     margin-top: 5%;
 }
-
 i{
 width: fit-content;
 display: inline;
 color: crimson;
 }
-
 .fa-linkedin-in{
     color: #0e76a8;
     width: fit-content;
 }
-
 .fa-github{
     color: white;
 }
-
 .fass-text{
     display: inline;
     position: relative;
     bottom: 0.6em;   
 }
-
 .fass-text h4{
     display: inline;
     font-size: 0.5em;
     margin-left: 0.8em    
 }
-
 .fass-text span{
     display: block;
     margin-left:4.6em;
     font-size: 0.5em;
     margin-top: -1.5em;
 }
-
-
 .container .contacts .description .description-box div{
  font-size: 1.45em;
  line-height: 1.4em;
  margin-top: 4%;
  margin-right: 1%;
 }
-
 .container .contacts .description .form-box{
  display:flex;
  flex-direction: column;
@@ -719,50 +604,36 @@ color: crimson;
  margin-top: 5%;
  row-gap: 5%;
  }
-
- .contacts .span-font{
+.contacts .span-font{
      font-size: 1.6em;
      color: crimson;
      font-weight: bold;
- }
-
- .name-surname-box{
+}
+.name-surname-box{
      display: flex;
      justify-content: space-between;
- }
-
-
-
+}
 input[id="name"],input[id="email"]{
     width: 49%;
 }
-
 input{
     height: 2.5em;
-    
 }
-
- input,textarea{
+input,textarea{
 background-color: #333;
 color:white; 
 border-radius: 6px;
 font-size: 1.4em;
 border-color: #333;
-
 }
-
 input:focus,textarea:focus{
     outline-width: 3px;
     outline-style: solid;
     outline-color:crimson;
 }
-
-
 input::placeholder,textarea::placeholder{
 color:white;
-
 }
-
 .form-box button{
     color: white;
     font-size: 1.7em;
@@ -772,14 +643,11 @@ color:white;
     border-radius: 6px;
     transition: all 0.2s;
 }
-
 .form-box button:hover{
     background-color: white;
     color: crimson;
     border: 2px solid crimson;
 }
-
-
 /* FOOTER SECTION */
 footer{
     height: 5vh;
@@ -789,14 +657,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
 }
-
 footer span{
     color: crimson;
 }
-
 footer a{
     color: white
 }
