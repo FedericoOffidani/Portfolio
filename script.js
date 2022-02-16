@@ -134,3 +134,51 @@ function hideButton() {
 }
 
 hideButton()
+
+//ROTATE CV BUTTON AT CLICK
+var cvdownload=0;
+function rotate(){
+    cvdownload++
+    console.log(cvdownload);
+    document.getElementById("Cv").classList.add("fa-flip");
+    setTimeout(()=>{document.getElementById("Cv").classList.remove("fa-flip");},1000)
+}
+
+
+//IMAGE CAROUSEL
+
+var mountainUrl= ["/images/mountain/mountain-river.jpeg","/images/mountain/mountain-morning.jpeg","/images/mountain/mountain-sunset.jpeg"]
+var iMountain=0;
+
+var iMoto=0;
+var motoUrl=["/images/motorcicle/motocroos.jpeg","/images/motorcicle/motocross-wheelie.jpeg","/images/motorcicle/moto-mountain.jpeg"]
+
+var iTrip=0;
+var tripUrl=["/images/trips/firenze.jpeg","/images/trips/sardegna.jpeg","/images/trips/plane-trip.jpeg"]
+
+
+function changeImage(){
+   //MOUNTAIN 
+   if(iMountain<2){iMountain++}else{
+       iMountain=0;
+   }
+  console.log(iMountain)
+   document.getElementById("mountain").setAttribute("style",`background-image: url("${mountainUrl[iMountain]}")`)
+
+   //MOTO
+   if(iMoto<2){iMoto++}else{
+    iMoto=0;
+    
+}
+document.getElementById("moto").setAttribute("style",`background-image: url("${motoUrl[iMoto]}")`)
+
+//TRIP
+
+if(iTrip<2){iTrip++}else{
+    iTrip=0;
+    
+}
+document.getElementById("trip").setAttribute("style",`background-image: url("${tripUrl[iTrip]}")`)
+}
+
+setInterval(changeImage,2000);

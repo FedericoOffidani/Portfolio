@@ -109,7 +109,7 @@
         </div>
         <a id="back-to-top" href="#">👆🏼</a>
         <!--BACK TO THE TOP BUTTON -->
-        <a id="Cv" href="/assets/Offidani_Federico.cv.pdf" download>Download Cv</a>
+        <a id="Cv" href="/assets/Offidani_Federico.cv.pdf" onclick="rotate()" download>Download Cv</a>
         <div class="hard-skills">
             <h2>Su di me</h2>
             <h3>Hard Skills</h3>
@@ -164,7 +164,32 @@
 
                 </div>
             </div>
-            <h4><a href="#">Contattami</a></h4>
+            <h4><a href="#contact">Contattami</a></h4>
+        </div>
+
+        <div class="free-time" id="skill">
+            <h2>Su di me</h2>
+            <h3>Passioni</h3>
+            <span class="line"></span>
+            <div class="cards">
+                <div class="card-box">
+                    <div class="card1" id="moto" onmouseover="hover(this)" onmouseout="unhover(this)">
+                        <!-- <img src="/images/skills/soft skills/crimson/teamwork.png" alt=""> -->
+                        <div class="text-passion">Motociclismo</div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card2" id="mountain" onmouseover="hover(this)" onmouseout="unhover(this)">
+                        <!-- <img src="/images/skills/soft skills/crimson/problem-solving.png" alt=""> -->
+                        <div class="text-passion">Montagna</div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card3" id="trip" onmouseover="hover(this)" onmouseout="unhover(this)">
+                        <div class="text-passion">Viaggi</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="contacts" id="contact">
@@ -219,7 +244,7 @@
                     <span class="span-font">Contattami</span>
                     <div class="name-surname-box">
                         <input type="text" id="name" name="nome" placeholder=" Nome e cognome" minlength="2" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder=" Email" required>
                     </div>
                     <input type="text" id="oggetto" name="oggetto" placeholder=" Oggetto della mail" required>
                     <textarea name="messaggio" id="" cols="30" rows="5" placeholder=" Scrivi il tuo messaggio..."
