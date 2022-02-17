@@ -480,7 +480,7 @@ border: solid 2px crimson;
     transition: all 0.3s ease
 }
 .container .free-time .cards .card-box .card1{
-    background-image: url("/images/home\ background\ image.jpg");
+    background-image: url("images/home\ background\ image.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -488,7 +488,7 @@ border: solid 2px crimson;
     border-radius: 6px;
 }
 .container .free-time .cards .card-box .card2{
-    background-image: url("/images/mountain/mountain-river.jpeg");
+    background-image: url("images/mountain/mountain-river.jpeg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -496,7 +496,7 @@ border: solid 2px crimson;
     border-radius: 6px;
 }
 .container .free-time .cards .card-box .card3{
-    background-image: url("/images/trips/firenze.jpeg");
+    background-image: url("images/trips/firenze.jpeg");
     background-size: cover;
     background-position: center;
     width: 100%;
