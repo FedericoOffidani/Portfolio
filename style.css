@@ -90,6 +90,7 @@ nav .text h2:hover, nav .text a:hover{
     margin-left: 30%;
     line-height: 1.5;
     z-index: 1;
+    
 }
 .opacity .home-icon{
     display: flex;
@@ -236,9 +237,9 @@ margin-left: 65%;
 .soft-skills .cards{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: fit-content;
-    width: 100%;
+    width: 70%;
     text-align: center;
     padding: 3%;
     flex-wrap: wrap;
@@ -246,7 +247,7 @@ margin-left: 65%;
 .soft-skills .card-box{
     height:fit-content;
     width: fit-content;
-    margin-right: 2%;
+    /* margin-right: 2%; */
     background-color:#222;
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -257,8 +258,8 @@ margin-left: 65%;
     background-color: crimson;
 }
 .soft-skills .card1, .soft-skills .card2, .soft-skills .card3{
-    height:280px;
-    width: 380px;
+    height:260px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,12 +272,12 @@ margin-left: 65%;
 }
 
 .soft-skills .card1 div,.soft-skills .card2 div,.soft-skills .card3 div{
-    font-size: 1.9em;
+    font-size: 1.7em;
     margin-top: 2%;
 }
 .soft-skills .card-box img{ 
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     margin-top: 23px;
     padding: 20px;
     box-sizing: content-box;
@@ -382,8 +383,8 @@ margin-left: 65%;
    }
 .hard-skills .description{
        display: flex;
-       justify-content: center;
-       width:80%;
+       justify-content: space-evenly;
+       width:70%;
        height: 100%;
        flex-wrap: wrap;
 }
@@ -392,8 +393,8 @@ margin-left: 65%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    margin-right: 1.5em;
+    width: 600px;
+    /* margin-right: 1.5em; */
     margin-top: 2em;
 }
 .hard-skills .description .description-box p{
@@ -619,8 +620,6 @@ border: solid 2px crimson;
  width: 30em;
  height: fit-content;
 }
-
-
 .fa-linkedin-in{
     color: #0e76a8;
     width: fit-content;
@@ -628,21 +627,27 @@ border: solid 2px crimson;
 .fa-github{
     color: white;
 }
-.fass-text{
+.fass-text, .fass-text-social{
     display: inline;
     position: relative;
     bottom: 0.6em;   
 }
 .fass-text h4{
     display: inline;
-    font-size: 0.5em;
+    font-size: 0.7em;
     margin-left: 0.8em    
 }
 .fass-text span{
     display: block;
     margin-left:4.6em;
-    font-size: 0.5em;
-    margin-top: -1.5em;
+    font-size: 0.6em;
+    margin-top: -1em;
+}
+
+.fass-text-social h4{
+    display: inline;
+    font-size: 0.7em;
+    margin-left: 1.1em;
 }
 
 #icon-contacs{
@@ -658,6 +663,7 @@ border: solid 2px crimson;
     text-decoration: none;
     color: white;
     margin-top: 5%;
+    display: block;
 }
 i{
 width: fit-content;
