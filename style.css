@@ -11,7 +11,9 @@
 :root{
     --h2-font-size:2.3em;
     --h3-font-size:1.1em;
+    --p-font-size:1.3em;
     --line-margin-top:-0.60em;
+    
 }
 
 html{
@@ -192,7 +194,7 @@ margin-left: 65%;
 }
 .who-I-am .body .text p{
     margin-top: 3%;
-    font-size: 1.2em;
+    font-size: var(--p-font-size);
     line-height: 1.4em;
 }
 
@@ -314,7 +316,7 @@ margin-left: 65%;
 /*DOWNLOAD CV BUTTON*/
 #Cv {
 	position: fixed;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 0.6em;
     left: 4%;
     top: 92%;
@@ -395,7 +397,7 @@ margin-left: 65%;
     margin-top: 2em;
 }
 .hard-skills .description .description-box p{
-    font-size: 1.2em;
+    font-size: var(--p-font-size);
     line-height: 1.4em;
     text-align: start;
     display: flex;
@@ -446,7 +448,7 @@ border: solid 2px crimson;
     display: flex;
     width: 600px;
     justify-content: space-between;
-    font-size: 1.2em;
+    font-size: var(--p-font-size);
 }
 .progress-box .progress-bar .background{
     width: 600px;
@@ -610,7 +612,7 @@ border: solid 2px crimson;
  height: fit-content;
 }
 .contacts .description .description-box>div{
- font-size: 1.2em;
+ font-size: var(--p-font-size);
  line-height: 1.4em;
  margin-top: 4%;
  margin-right: 1%;
@@ -691,7 +693,7 @@ input,textarea{
 background-color: #333;
 color:white; 
 border-radius: 6px;
-font-size: 1.2em;
+font-size:var(--p-font-size);
 border-color: #333;
 }
 input:focus,textarea:focus{
