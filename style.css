@@ -187,7 +187,7 @@ margin-left: 65%;
    padding-bottom: 2%;
    word-wrap: break-word;
    line-height: 1.4em;
-   margin-right: -7%;
+   margin-right: -2%;
 }
 .who-I-am .body .text h4{
     margin-top: 1%;
@@ -317,7 +317,7 @@ margin-left: 65%;
 /*DOWNLOAD CV BUTTON*/
 #Cv {
 	position: fixed;
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding: 0.6em;
     left: 4%;
     top: 92%;
@@ -395,7 +395,7 @@ margin-left: 65%;
     justify-content: center;
     width: 600px;
     /* margin-right: 1.5em; */
-    margin-top: 2em;
+    margin-top:5%;
 }
 .hard-skills .description .description-box p{
     font-size: var(--p-font-size);
@@ -404,7 +404,7 @@ margin-left: 65%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 /*CONTACT ME BUTTON */
 .hard-skills h4{
@@ -438,8 +438,7 @@ border: solid 2px crimson;
     display:flex;
     flex-direction: column;
     width: 600px;
-    /* justify-content: center; */
-    margin-top: 6em;
+    margin-top: 5.4%;
     row-gap: 5%;
 }
 .progress-box .progress-bar{
@@ -531,8 +530,8 @@ border: solid 2px crimson;
     background-color: crimson;
 }
 .free-time .cards .card-box .card1, .free-time .card2, .free-time .card3{
-    height:250px;
-    width: 350px;
+    height:260px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -612,6 +611,8 @@ border: solid 2px crimson;
  margin-top: 5%;
  height: fit-content;
 }
+
+
 .contacts .description .description-box>div{
  font-size: var(--p-font-size);
  line-height: 1.4em;
@@ -635,7 +636,7 @@ border: solid 2px crimson;
 .fass-text h4{
     display: inline;
     font-size: 0.7em;
-    margin-left: 0.8em    
+    margin-left: 0.8em;    
 }
 .fass-text span{
     display: block;
@@ -662,7 +663,7 @@ border: solid 2px crimson;
     height: 2em;
     text-decoration: none;
     color: white;
-    margin-top: 5%;
+    margin-top: 8%;
     display: block;
 }
 i{
@@ -681,7 +682,7 @@ height: fit-content;
  row-gap: 5%;
 }
 .contacts .span-font{
-     font-size: 1.5em;
+     font-size: 1.7em;
      color: crimson;
      font-weight: bold;
 }
