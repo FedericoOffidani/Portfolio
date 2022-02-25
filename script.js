@@ -13,6 +13,7 @@ function scrolling() {
 }
 
 
+
 //WRITING "WEB DEVELOPER"
 
 //entering the letters
