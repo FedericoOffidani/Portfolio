@@ -862,6 +862,12 @@ nav .text h2{
     .contacts .description #description-box-text{
        height: 100%;
     }
+    #back-to-top {
+        left:92%;
+    }
+    #Cv{
+        position: static;
+    }
 
     }
     @media only screen and (max-width:811px){
