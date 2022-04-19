@@ -3,4 +3,5 @@
 This is my web page.<br>
 It is work in progress and it's created using Javascript, Css and Html. 
 
-Here you can find out who I am, what I can do and you can consult my CV and my portfolio
+Here you can find out who I am and what are my skills.
+Here you can also download my CV.
